@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+    <script src="algorithm.js"></script>
+    <script src="helper.js"></script>
+    <script src="button.js"></script>
+    <script src="graph.js"></script>
+    <script src="table.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my_css.css">
+</head>
+<body>
+<section class="head">
+    <div class="container">
+        <div class="col-lg-offset-3">
+            <span class="text col-lg-3">Количество вершин:</span>
+            <button type="submit" class="btn btn-default col-lg-2 margin" onclick="numVertices1(this); createBtnMtr(); return false"
+                    id="btn-Vertex" oncontextmenu="numVertices0(this); createBtnMtr(); return false">3</button>
+            <button type="submit" class="btn btn-default col-lg-3" onclick="main(); return false">Готово</button>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="col-lg-offset-2 col-lg-5" id="btns"></div>
+    <div id="hereTable"><table id="myTable"></table></div>
+    <div id="graph"></div>
+
+</section>
+
+</body>
+<script type="text/javascript" src="d3/d3.min.js"></script>
+</html>
